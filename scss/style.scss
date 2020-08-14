@@ -1,0 +1,191 @@
+@import 'variables';
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-image:url('../img/watch-932693_1920.jpg');
+min-height: 100vh;
+
+}
+
+
+
+.wraper{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width:550px;
+background-image: radial-gradient(circle, rgb(67, 71, 71) 0%, rgb(53, 50, 50)55%);
+padding:50px;
+border-radius: 10px;
+box-shadow: 5px 5px 10px black;
+
+}
+.wraper__info{
+    position: absolute;
+    top:10px;
+    left:500px;
+    color: $second-color;
+    cursor: pointer;
+    transition: color .4s ;
+    padding:15px;
+    :hover{
+        color: $first-color;
+       
+    }
+}
+.wraper__info2{
+    position: absolute;
+    top:40px;
+    left:500px;
+    color: $second-color;
+    cursor: pointer;
+    transition: color .4s ;
+    padding:15px
+}
+.wraper__colors{
+display: none;
+position: absolute;
+background-color: rgb(173, 190, 183);
+width:50px;
+height:100px;
+top:100px;
+left:500px;
+border-radius: 10px;
+
+
+}
+.wraper__color-red{
+    background-color: red;
+    width:20px;
+    position: absolute;
+    height:20px;
+    border-radius: 50%;
+top:10px;
+left:15px;
+
+}
+.wraper__color-blue{
+    background-color: blue;
+    width:20px;
+    position: absolute;
+    height:20px;
+    border-radius: 50%;
+top:40px;
+left:15px;
+
+}
+.wraper__color-green{
+    background-color: green;
+    width:20px;
+    position: absolute;
+    height:20px;
+    border-radius: 50%;
+top:70px;
+left:15px;
+
+}
+
+h1{
+    color:white;
+    padding:10px;
+    font-family: 'Turret Road', cursive;
+
+
+}
+.wraper__stopwatch{
+    font-size: 70px;
+    color: $second-color
+}
+.wraper__time{
+    visibility: hidden;
+    color: $first-color
+}
+
+.wraper__buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+button{
+    margin:10px;
+    padding:10px 20px;
+    width:20%;
+color:#fff;
+background-color: transparent;
+border:1px solid $second-color;
+font-size:20px;
+transition: background-color .3s;
+cursor: pointer;
+border-radius: 8px;
+:hover,
+:focus{
+
+outline: none;
+}
+}
+
+.wraper__history{
+flex-grow: 1;
+text-transform:uppercase ;
+
+  
+}
+
+
+.modal-shadow{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,.65);
+  
+    width:100%;
+    height:100%
+}
+
+.modal-shadow__modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding:20px 50px;
+    width:400px;
+    border-radius: 10px;
+    h3{
+        padding-bottom:10px;
+    
+    }
+    p{
+        padding:5px 0;
+    
+    }
+}
+
+.wraper__time-list{
+    color:#fff
+}
+.modal-shadow__close{
+   margin:40px auto 0;
+   display: block;
+   width:200px;
+   background-color: $second-color;
+   transition: background-color .3s;
+   
+}
+
+
+
+
+
