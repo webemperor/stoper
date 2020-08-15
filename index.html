@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html Lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stoper</title>
+
+    <script src="https://kit.fontawesome.com/6a53c4d64d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Turret+Road:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wraper">
+
+        <p class="wraper__info">
+            <i class="fa fa-question" aria-hidden="true"></i>
+        </p>
+        <p class='wraper__info2'>
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+        </p>
+        <div class="wraper__colors">
+            <div class="wraper__color-red"></div>
+            <div class="wraper__color-blue"></div>
+            <div class="wraper__color-green"></div>
+
+        </div>
+        <h1>STOPER</h1>
+        <p class="wraper__stopwatch">0:00</p>
+        <p class="wraper__time">0:00</p>
+
+        <div class="wraper__buttons">
+            <button class='wraper__start'><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+            <button class='wraper__pause'><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
+            <button class='wraper__stop'><i class="fa fa-stop-circle" aria-hidden="true"></i></button>
+            <button class='wraper__reset'><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+            <button class='wraper__history'>archiwum</button>
+        </div>
+        <ul class="wraper__time-list"></ul>
+
+    </div>
+
+    <div class="modal-shadow ">
+        <div class="modal-shadow__modal">
+            <h3>instukcja</h3>
+            <p><i class="fa fa-play-circle" aria-hidden="true"> - start</i></p>
+            <p><i class="fa fa-pause-circle" aria-hidden="true"> - pause</i></p>
+            <p><i class="fa fa-stop-circle" aria-hidden="true"> - stop</i></p>
+            <p><i class="fa fa-times-circle" aria-hidden="true"> - reset</i></p>
+            <p><strong>archiwum</strong> - look previous survey </p>
+            <button class="modal-shadow__close">Close</button>
+        </div>
+    </div>
+
+    <script type="" src="App.js"></script>
+</body>
+
+</html>
